@@ -39,7 +39,7 @@ const jateDB = await openDB('jate', 1);
 
 const tx = jateDB.transaction('jate', 'readonly');
 
-const store = tx.obejectStore('jate');
+const store = tx.objectStore('jate');
 
 const request = store.getAll();
 
